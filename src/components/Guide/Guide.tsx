@@ -1,6 +1,9 @@
+import '@b-design/antd/dist/b-design-antd.css';
 import { Layout, Row, Typography } from 'antd';
-import type React from 'react';
+import React from 'react';
 import styles from './Guide.less';
+
+import { Button } from '@b-design/antd';
 
 interface Props {
   name: string;
@@ -15,6 +18,7 @@ const Guide: React.FC<Props> = (props) => {
         <Typography.Title level={3} className={styles.title}>
           欢迎使用 <strong>{name}</strong> ！
         </Typography.Title>
+        <Button>ddd</Button>
       </Row>
     </Layout>
   );

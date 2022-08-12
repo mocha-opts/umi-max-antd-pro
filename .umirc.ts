@@ -9,11 +9,6 @@ export default defineConfig({
   layout: {
     title: '@umijs/max',
   },
-  locale: {
-    // 默认使用 src/locales/zh-CN.ts 作为多语言文件
-    default: 'zh-CN',
-    baseSeparator: '-',
-  },
   routes: [
     {
       path: '/',
@@ -30,11 +25,10 @@ export default defineConfig({
       component: './Access',
     },
     {
-        name: ' CRUD 示例',
-        path: '/table',
-        component: './Table',
+      name: ' CRUD 示例',
+      path: '/table',
+      component: './Table',
     },
   ],
   npmClient: 'pnpm',
 });
-
